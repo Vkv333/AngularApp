@@ -23,10 +23,11 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
+
       - name: Install dependencies and build
         run: |
           npm install
-          ng build --configuration production
+          ng build
         working-directory: AngularHON
 
       - name: Zip build artifacts
