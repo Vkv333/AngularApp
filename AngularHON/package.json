@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "npm start",
-    "build": "ng build --configuration production",
+    "build": "ng build --configuration production --output-path dist/angular-hon",
+    "build:static": "ng build --configuration production --output-path dist/angular-hon",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:AngularHON": "node dist/angular-hon/server/server.mjs"
