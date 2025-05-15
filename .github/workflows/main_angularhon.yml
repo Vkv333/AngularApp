@@ -27,9 +27,11 @@ jobs:
         run: |
           npm install
           ng build --configuration production
+        working-directory: AngularHON
 
       - name: Zip build artifacts
         run: zip -r release.zip ./dist/angularHON
+        working-directory: AngularHON
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
