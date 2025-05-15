@@ -23,9 +23,6 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: Set working directory
-        run: cd AngularApp
-
       - name: npm install, build, and test
         run: |
           npm install
