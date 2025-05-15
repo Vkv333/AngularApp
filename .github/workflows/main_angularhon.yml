@@ -30,7 +30,7 @@ jobs:
         working-directory: AngularHON
 
       - name: Zip build artifacts
-        run: zip -r release.zip ./dist/angularHON
+        run: zip -r release.zip ./dist/angular-hon
         working-directory: AngularHON
 
       - name: Upload artifact
